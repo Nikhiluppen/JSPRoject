@@ -66,7 +66,7 @@ payments.forEach(payment => {
     </td>
     <td>${payment.date}</td>
   `;
-
+-
   tableBody.appendChild(row);
 
   if (payment.status === "Success") {
