@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>App Payments Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>💳 App Payments Dashboard</h1>
+    <p>Overview of Transactions</p>
+  </header>
+
+  <!-- SUMMARY CARDS -->
+  <section class="cards">
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p id="totalRevenue">$0</p>
+    </div>
+    <div class="card">
+      <h3>Total Transactions</h3>
+      <p id="totalTransactions">0</p>
+    </div>
+    <div class="card">
+      <h3>Successful</h3>
+      <p id="successCount">0</p>
+    </div>
+    <div class="card">
+      <h3>Failed</h3>
+      <p id="failedCount">0</p>
+    </div>
+  </section>
+
+  <!-- TRANSACTION TABLE -->
+  <section class="table-section">
+    <h2>Recent Payments</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Transaction ID</th>
+          <th>User</th>
+          <th>Amount ($)</th>
+          <th>Method</th>
+          <th>Status</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="paymentTable">
+        <!-- JS will insert rows -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
